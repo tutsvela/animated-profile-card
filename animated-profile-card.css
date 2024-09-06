@@ -1,0 +1,48 @@
+/* SalmanWP Cards 1 */
+
+.swp-card-1 .kt-inside-inner-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.swp-card-1 figure.wp-block-kadence-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.swp-card-1 .wp-block-kadence-image .kb-img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: all 1s ease;
+}
+
+.swp-card-1 .kt-inside-inner-col:hover .wp-block-kadence-image .kb-img {
+    transform: scale(2);
+    transform-origin: left center;
+}
+
+.swp-card-1
+    .kt-inside-inner-col
+    .wp-block-kadence-advancedheading:nth-child(2) {
+    margin-bottom: auto;
+}
+
+@media all and (min-width: 212px) {
+    .swp-card-1 .kt-inside-inner-col > *:not(figure) {
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .swp-card-1 .kt-inside-inner-col:hover > * {
+        opacity: 1;
+    }
+}
